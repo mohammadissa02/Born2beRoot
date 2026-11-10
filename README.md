@@ -71,7 +71,7 @@ SSH is configured to listen on port `4242` inside the virtual machine.
 Example connection from the host:
 
 ```bash
-ssh -p 4242 mohissa@127.0.0.1
+ssh -p 4241 mohissa@127.0.0.1
 ```
 
 The actual host connection depends on the VirtualBox network configuration. The important settings inside the virtual machine are:
@@ -83,7 +83,7 @@ PermitRootLogin: no
 Root login should fail:
 
 ```bash
-ssh -p 4242 root@127.0.0.1
+ssh -p 4241 root@127.0.0.1
 ```
 
 ### Generating the signature
